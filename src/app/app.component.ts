@@ -34,9 +34,9 @@ export class AppComponent {
 
     this.calculateText = `
 เงินเดือน ${this.balance} บาท
-เงินใช้จ่าย ${need} บาท
-เงินซื้อของที่อยากได้ ${want} บาท
-เงินออม / ลงทุน ${invest} บาท
+เงินใช้จ่าย ${need} บาท (${this.needPercnet}%)
+เงินซื้อของที่อยากได้ ${want} บาท (${this.wantPercnet}%)
+เงินออม / ลงทุน ${invest} บาท (${this.investPercnet}%)
     `;
   }
 }
