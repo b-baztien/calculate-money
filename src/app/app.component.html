@@ -1,0 +1,10 @@
+<div>
+  <label for="balance">เงินเดือน</label><input type="text" id="balance" placeholder="เงินเดือน" [(ngModel)]="balance" (ngModelChange)="calculateBalance()" >
+  <label for="needPercent">เงินใช้ประจำวัน (%)</label>
+  <input type="text" [(ngModel)]="needPercnet" (ngModelChange)="calculateBalance()" id="needPercent" placeholder="เงินใช้ประจำวัน (%)">
+  <label for="wantPercent">เงินซื้อของที่อยากได้ (%)</label>
+  <input type="text" [(ngModel)]="wantPercnet" (ngModelChange)="calculateBalance()"  id="wantPercent" placeholder="เงินซื้อของที่อยากได้ (%)">
+  <label for="investPercent">เงินออม / ลงทุน (%)</label>
+  <input type="text"  [(ngModel)]="investPercnet" (ngModelChange)="calculateBalance()"  id="investPercent" placeholder="เงินออม / ลงทุน (%)">
+  <pre>{{calculateText}}</pre>
+</div>

@@ -1,0 +1,10 @@
+p {
+  font-family: Lato;
+  word-wrap: break-word;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
